@@ -57,3 +57,16 @@ compile_commands.json
 *.swp
 debug/
 saves/
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.cmake/api/v1/reply/codemodel-v2-23cc6eba00a0cd902aea.json
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.cmake/api/v1/reply/index-2025-02-19T20-10-55-0539.json
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.cmake/api/v1/reply/target-LifeForm_Simulation-Debug-5da300ca419eabaca26a.json
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.ninja_deps
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.ninja_log
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/LifeForm_Simulation_autogen.dir/AutogenInfo.json
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/LifeForm_Simulation_autogen.dir/AutogenUsed.txt
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/LifeForm_Simulation_autogen.dir/ParseCache.txt
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/LifeForm_Simulation.exe
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/LifeForm_Simulation_autogen/deps
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/LifeForm_Simulation_autogen/mocs_compilation.cpp
+build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/Testing/Temporary/LastTest.log
+CMakeLists.txt.user
