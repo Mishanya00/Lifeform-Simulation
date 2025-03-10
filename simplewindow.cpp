@@ -5,6 +5,14 @@
 #include <QVBoxLayout>
 #include "canvas.h"
 #include "random.h"
+#include "selectwindow.h"
+
+void SimpleWindow::AddNewButtonPressed()
+{
+    SelectWindow *secondWindow = new SelectWindow(this);
+    secondWindow->setAttribute(Qt::WA_DeleteOnClose); // Automatically delete the window when closed
+    secondWindow->show();
+}
 
 SimpleWindow::SimpleWindow(QWidget *parent)
     : QWidget(parent)
@@ -26,6 +34,10 @@ SimpleWindow::SimpleWindow(QWidget *parent)
     auto btnIterate = new QPushButton("Iterate", this);
     connect(btnIterate, &QPushButton::clicked, cnvMain, &Canvas::IterateButtonPressed);
     inner->addWidget(btnIterate);
+
+    auto btnAddLife = new QPushButton("Add Lifeform", this);
+    connect(btnAddLife, &QPushButton::clicked, this, &SimpleWindow::AddNewButtonPressed);
+    inner->addWidget(btnAddLife);
 
     //inner->setStretch(0, 1);
     //inner->setStretch(1, 9);

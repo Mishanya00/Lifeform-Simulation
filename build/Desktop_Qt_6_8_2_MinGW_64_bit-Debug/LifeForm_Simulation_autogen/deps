@@ -56,6 +56,8 @@ LifeForm_Simulation_autogen/timestamp: \
 	D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/main.cpp \
 	D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/random.cpp \
 	D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/random.h \
+	D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.cpp \
+	D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h \
 	D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/simplewindow.cpp \
 	D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/simplewindow.h \
 	D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/simulation.cpp \
@@ -211,8 +213,10 @@ LifeForm_Simulation_autogen/timestamp: \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QMainWindow \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qmainwindow.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \

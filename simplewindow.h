@@ -10,5 +10,7 @@ class SimpleWindow : public QWidget
 public:
     SimpleWindow(QWidget *parent = nullptr);
     ~SimpleWindow();
+
+    void AddNewButtonPressed();
 };
 #endif // SIMPLEWINDOW_H

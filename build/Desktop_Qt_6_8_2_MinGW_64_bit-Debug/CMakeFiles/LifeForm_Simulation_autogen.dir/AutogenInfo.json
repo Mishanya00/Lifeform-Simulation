@@ -354,6 +354,12 @@
 			null
 		],
 		[
+			"D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_selectwindow.cpp",
+			null
+		],
+		[
 			"D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/simplewindow.h",
 			"MU",
 			"EWIEGA46WW/moc_simplewindow.cpp",
@@ -486,6 +492,11 @@
 		],
 		[
 			"D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/random.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.cpp",
 			"MU",
 			null
 		],

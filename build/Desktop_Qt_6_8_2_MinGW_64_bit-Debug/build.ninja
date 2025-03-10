@@ -153,6 +153,14 @@ build CMakeFiles/LifeForm_Simulation.dir/lifeforms/lifeformcollection.cpp.obj: C
   OBJECT_DIR = CMakeFiles\LifeForm_Simulation.dir
   OBJECT_FILE_DIR = CMakeFiles\LifeForm_Simulation.dir\lifeforms
 
+build CMakeFiles/LifeForm_Simulation.dir/selectwindow.cpp.obj: CXX_COMPILER__LifeForm_Simulation_unscanned_Debug D$:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.cpp || cmake_object_order_depends_target_LifeForm_Simulation
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\LifeForm_Simulation.dir\selectwindow.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/LifeForm_Simulation_autogen/include -ID:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation -ID:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms -isystem D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore -isystem D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include -isystem D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/mkspecs/win32-g++ -isystem D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets -isystem D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\LifeForm_Simulation.dir
+  OBJECT_FILE_DIR = CMakeFiles\LifeForm_Simulation.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LifeForm_Simulation
@@ -161,7 +169,7 @@ build CMakeFiles/LifeForm_Simulation.dir/lifeforms/lifeformcollection.cpp.obj: C
 #############################################
 # Link the executable LifeForm_Simulation.exe
 
-build LifeForm_Simulation.exe: CXX_EXECUTABLE_LINKER__LifeForm_Simulation_Debug CMakeFiles/LifeForm_Simulation.dir/LifeForm_Simulation_autogen/mocs_compilation.cpp.obj CMakeFiles/LifeForm_Simulation.dir/main.cpp.obj CMakeFiles/LifeForm_Simulation.dir/simplewindow.cpp.obj CMakeFiles/LifeForm_Simulation.dir/canvas.cpp.obj CMakeFiles/LifeForm_Simulation.dir/simulation.cpp.obj CMakeFiles/LifeForm_Simulation.dir/random.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/bacteria.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/lifeform.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/photobacteria.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/magicbacteria.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/virus.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/nanorobot.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/lifeformcollection.cpp.obj | D$:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6Widgets.a D$:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6Gui.a D$:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6Core.a D$:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6EntryPoint.a || LifeForm_Simulation_autogen LifeForm_Simulation_autogen_timestamp_deps
+build LifeForm_Simulation.exe: CXX_EXECUTABLE_LINKER__LifeForm_Simulation_Debug CMakeFiles/LifeForm_Simulation.dir/LifeForm_Simulation_autogen/mocs_compilation.cpp.obj CMakeFiles/LifeForm_Simulation.dir/main.cpp.obj CMakeFiles/LifeForm_Simulation.dir/simplewindow.cpp.obj CMakeFiles/LifeForm_Simulation.dir/canvas.cpp.obj CMakeFiles/LifeForm_Simulation.dir/simulation.cpp.obj CMakeFiles/LifeForm_Simulation.dir/random.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/bacteria.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/lifeform.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/photobacteria.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/magicbacteria.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/virus.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/nanorobot.cpp.obj CMakeFiles/LifeForm_Simulation.dir/lifeforms/lifeformcollection.cpp.obj CMakeFiles/LifeForm_Simulation.dir/selectwindow.cpp.obj | D$:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6Widgets.a D$:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6Gui.a D$:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6Core.a D$:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6EntryPoint.a || LifeForm_Simulation_autogen LifeForm_Simulation_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6Widgets.a  D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6Gui.a  D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

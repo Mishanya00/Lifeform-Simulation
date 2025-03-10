@@ -38,6 +38,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         lifeforms/virus.h lifeforms/virus.cpp
         lifeforms/nanorobot.h lifeforms/nanorobot.cpp
         lifeforms/lifeformcollection.h lifeforms/lifeformcollection.cpp
+        selectwindow.h selectwindow.cpp
 
 
     )
