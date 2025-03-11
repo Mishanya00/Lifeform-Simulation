@@ -768,12 +768,19 @@ D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/simplewindow.cpp
 D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h
  mmc:Q_OBJECT
  mdp:D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/LifeForm_Simulation_autogen/moc_predefs.h
+ mdp:D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/bacteria.h
+ mdp:D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/lifeform.h
+ mdp:D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/lifeformcollection.h
+ mdp:D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/random.h
  mdp:D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h
+ mdp:D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/simulation.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/QPointF
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/q20functional.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/q20iterator.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/q20memory.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/q20type_traits.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/q23utility.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qalgorithms.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qanystringview.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qarraydata.h
@@ -820,6 +827,7 @@ D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qlatin1stringview.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qline.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qlist.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qlocale.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qlogging.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qmalloc.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qmap.h
@@ -840,6 +848,7 @@ D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qrect.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qrefcount.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qregularexpression.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qscopedpointer.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qscopeguard.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qset.h
@@ -883,12 +892,14 @@ D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qtversionchecks.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qtypeinfo.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qtypes.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qurl.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qutf8stringview.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qvariant.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qvarlengtharray.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qversiontagging.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qxptype_traits.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qyieldcpu.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/QPainter
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qaction.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qbitmap.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qbrush.h
@@ -901,22 +912,43 @@ D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qimage.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qkeysequence.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qpaintdevice.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qpainter.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qpalette.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qpen.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qpixelformat.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qpixmap.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qpolygon.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qregion.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qrgb.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qrgba64.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtextcursor.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtextdocument.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtextformat.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtextoption.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtgui-config.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtguiexports.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtguiglobal.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qvalidator.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QComboBox
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QLineEdit
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractslider.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractspinbox.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qcombobox.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qframe.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qlineedit.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qrubberband.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qslider.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qstyleoption.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qtabbar.h
+ mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
@@ -970,6 +1002,8 @@ D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h
+ mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.h
+ mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.tcc
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h
@@ -1051,6 +1085,7 @@ D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h
+ mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/random
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h
@@ -1085,13 +1120,20 @@ D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/selectwindow.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h
+ mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h
+ mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/emmintrin.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h
+ mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h
+ mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mmintrin.h
+ mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mwaitintrin.h
+ mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/pmmintrin.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h
+ mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xmmintrin.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_mac.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_off_t.h

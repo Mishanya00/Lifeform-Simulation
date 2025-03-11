@@ -68,6 +68,7 @@ LifeForm_Simulation_autogen/timestamp: \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/q20memory.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/q20type_traits.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/q23utility.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qalgorithms.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qanystringview.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qarraydata.h \
@@ -114,6 +115,7 @@ LifeForm_Simulation_autogen/timestamp: \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qlatin1stringview.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qline.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qlist.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qlocale.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qlogging.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qmalloc.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qmap.h \
@@ -134,6 +136,7 @@ LifeForm_Simulation_autogen/timestamp: \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qprocessordetection.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qrect.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qrefcount.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qregularexpression.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qscopedpointer.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qscopeguard.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qset.h \
@@ -177,6 +180,7 @@ LifeForm_Simulation_autogen/timestamp: \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qtversionchecks.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qtypeinfo.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qtypes.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qurl.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qutf8stringview.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qvariant.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -206,19 +210,36 @@ LifeForm_Simulation_autogen/timestamp: \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qregion.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qrgb.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qrgba64.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtextcursor.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtextdocument.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtextformat.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtextoption.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtgui-config.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtguiexports.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtguiglobal.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qvalidator.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QComboBox \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QLineEdit \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QMainWindow \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractslider.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qcombobox.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qframe.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qlineedit.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qmainwindow.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qrubberband.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qslider.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qstyleoption.h \
+	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qtabbar.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
 	D:/Programs/ToolsPROF/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \

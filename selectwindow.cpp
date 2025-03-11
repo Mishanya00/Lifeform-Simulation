@@ -1,21 +1,14 @@
 #include "selectwindow.h"
 
-#include <QComboBox>
 #include <QPushButton>
-#include <QLineEdit>
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QMessageBox>
+#include <QRegularExpression>
 
-enum LifeformType {
-    ltBacteria,
-    ltMagicBacteria,
-    ltPhotoBacteria,
-    ltVirus,
-    ltNanorobot,
-};
 
-SelectWindow::SelectWindow(QWidget *parent)
+SelectWindow::SelectWindow(QWidget *parent, std::unique_ptr<Simulation> sim)
     : QDialog{parent}
 {
     this->setWindowTitle("Add new Lifeform");
@@ -23,13 +16,13 @@ SelectWindow::SelectWindow(QWidget *parent)
 
     auto ltMain = new QVBoxLayout(this);
 
-    auto cbCypherSelect = new QComboBox();
-    ltMain->addWidget(cbCypherSelect);
-    cbCypherSelect->addItem("Bacteria");
-    cbCypherSelect->addItem("Photo Bacteria");
-    cbCypherSelect->addItem("Magic Bacteria");
-    cbCypherSelect->addItem("Virus");
-    cbCypherSelect->addItem("Nanorobot");
+    cbLifeSelect = new QComboBox();
+    ltMain->addWidget(cbLifeSelect);
+    cbLifeSelect->addItem("Bacteria");
+    cbLifeSelect->addItem("Photo Bacteria");
+    cbLifeSelect->addItem("Magic Bacteria");
+    cbLifeSelect->addItem("Virus");
+    cbLifeSelect->addItem("Nanorobot");
 
     auto ltFirstLine = new QHBoxLayout();
     ltMain->addLayout(ltFirstLine);
@@ -37,14 +30,14 @@ SelectWindow::SelectWindow(QWidget *parent)
     auto labelX = new QLabel("X: ", this);
     ltFirstLine->addWidget(labelX);
 
-    auto leX = new QLineEdit();
+    leX = new QLineEdit();
     leX->setPlaceholderText("X coord...");
     ltFirstLine->addWidget(leX);
 
     auto labelY = new QLabel("Y: ", this);
     ltFirstLine->addWidget(labelY);
 
-    auto leY = new QLineEdit();
+    leY = new QLineEdit();
     leY->setPlaceholderText("Y coord...");
     ltFirstLine->addWidget(leY);
 
@@ -58,24 +51,15 @@ SelectWindow::SelectWindow(QWidget *parent)
     auto ltSecondLine = new QHBoxLayout();
     ltMain->addLayout(ltSecondLine);
 
-    auto labelSizeX = new QLabel("Size X: ", this);
+    auto labelSizeX = new QLabel("Size: ", this);
     ltSecondLine->addWidget(labelSizeX);
 
-    auto leSizeX = new QLineEdit();
-    leSizeX->setPlaceholderText("Size x...");
-    ltSecondLine->addWidget(leSizeX);
-
-    auto labelSizeY = new QLabel("Size Y: ", this);
-    ltSecondLine->addWidget(labelSizeY);
-
-    auto leSizeY = new QLineEdit();
-    leSizeY->setPlaceholderText("Size y...");
-    ltSecondLine->addWidget(leSizeY);
+    leSize = new QLineEdit();
+    leSize->setPlaceholderText("Size. . .");
+    ltSecondLine->addWidget(leSize);
 
     ltSecondLine->setStretch(0, 1);
-    ltSecondLine->setStretch(1, 4);
-    ltSecondLine->setStretch(2, 1);
-    ltSecondLine->setStretch(3, 4);
+    ltSecondLine->setStretch(1, 8);
 
     auto ltThirdLine = new QHBoxLayout();
     ltMain->addLayout(ltThirdLine);
@@ -83,14 +67,14 @@ SelectWindow::SelectWindow(QWidget *parent)
     auto labelHP = new QLabel("HP: ", this);
     ltThirdLine->addWidget(labelHP);
 
-    auto leHP = new QLineEdit();
+    leHP = new QLineEdit();
     leHP->setPlaceholderText("HP...");
     ltThirdLine->addWidget(leHP);
 
     auto labelMaxHp = new QLabel("Max HP: ", this);
     ltThirdLine->addWidget(labelMaxHp);
 
-    auto leMaxHP = new QLineEdit();
+    leMaxHP = new QLineEdit();
     leMaxHP->setPlaceholderText("Max HP...");
     ltThirdLine->addWidget(leMaxHP);
 
@@ -104,9 +88,52 @@ SelectWindow::SelectWindow(QWidget *parent)
 
     ltFourthLine->addStretch(4);
 
-    auto btnCreateLifeform = new QPushButton("open", this);
+    auto btnCreateLifeform = new QPushButton("Add", this);
     ltFourthLine->addWidget(btnCreateLifeform);
     ltFourthLine->setStretch(1, 2);
+    connect(btnCreateLifeform, &QPushButton::clicked, this, [this, &sim]() { SelectWindow::AddButtonPressed(sim); });
 
     ltFourthLine->addStretch(4);
+}
+
+bool SelectWindow::isNumber(const QString &text) {
+    QRegularExpression regExp("^-?\\d+$"); // Same regex as before
+    return regExp.match(text).hasMatch(); // Check if the input matches the regex
+}
+
+void SelectWindow::AddButtonPressed(std::unique_ptr<Simulation>& sim)
+{
+    int x, y;
+    int size;
+    int hp, max_hp;
+    bool isCorrect = true;
+
+    if (isNumber(leX->text()) && isNumber(leY->text())) {
+        x = leX->text().toInt();
+        y = leX->text().toInt();
+    }
+    else {
+        isCorrect = false;
+        QMessageBox::critical(this, "Error", "Coordinate parameters contain non-integers");
+    }
+    if (isNumber(leHP->text()) && isNumber(leMaxHP->text())) {
+        hp = leHP->text().toInt();
+        max_hp = leMaxHP->text().toInt();
+    }
+    else {
+        isCorrect = false;
+        QMessageBox::critical(this, "Error", "Health parameters contain non-integers");
+    }
+    if (isNumber(leSize->text())) {
+        size = leSize->text().toInt();
+    }
+    else {
+        isCorrect = false;
+        QMessageBox::critical(this, "Error", "Size parameters contain non-integers");
+    }
+
+    if (sim)
+    {
+    }
+    this->deleteLater();
 }
