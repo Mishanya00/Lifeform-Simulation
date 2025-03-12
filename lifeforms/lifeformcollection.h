@@ -10,11 +10,16 @@ class LifeFormCollection
 public:
     LifeFormCollection();
 
+    /*
     template<typename T>
     void add(T &&entity)
     {
         agents_.emplace_back(std::make_unique<T>(std::move(entity)));
         //agents_.emplace_back(std::make_unique<T>(std::forward<T>(entity))); // тонкий момент
+    }*/
+
+    void add(std::unique_ptr<LifeForm> entity) {
+        agents_.push_back(std::move(entity));
     }
 
     void del(size_t index);

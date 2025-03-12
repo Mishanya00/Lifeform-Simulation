@@ -132,8 +132,30 @@ void SelectWindow::AddButtonPressed(std::unique_ptr<Simulation>& sim)
         QMessageBox::critical(this, "Error", "Size parameters contain non-integers");
     }
 
+    LifeformType to_create;
+
+    switch(cbLifeSelect->currentIndex())
+    {
+    case 0:
+        to_create = ltBacteria;
+        break;
+    case 1:
+        to_create = ltPhotoBacteria;
+        break;
+    case 2:
+        to_create = ltMagicBacteria;
+        break;
+    case 3:
+        to_create = ltVirus;
+        break;
+    case 4:
+        to_create = ltNanorobot;
+        break;
+    }
+
     if (sim)
     {
+        sim->AddNewAgent(to_create, QPoint(x, y), size, hp, max_hp);
     }
     this->deleteLater();
 }

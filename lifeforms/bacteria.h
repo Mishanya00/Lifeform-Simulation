@@ -7,7 +7,7 @@ class Bacteria : public LifeForm
 {
 public:
     Bacteria(float x, float y);
-
+    virtual ~Bacteria() {}
     // As far as I know its not necessary to specify virtual if its virtual in the base class
     virtual void Draw(QPainter & painter) override;
     virtual void Reproduce();

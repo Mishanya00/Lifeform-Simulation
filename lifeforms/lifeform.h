@@ -11,6 +11,7 @@ class LifeForm
 {
 public:
     LifeForm();
+    virtual ~LifeForm() = default;
 
     bool isAlive();
     std::string & name();

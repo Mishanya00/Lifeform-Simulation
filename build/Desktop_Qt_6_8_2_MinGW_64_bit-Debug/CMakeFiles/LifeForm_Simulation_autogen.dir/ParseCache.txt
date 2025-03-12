@@ -382,14 +382,14 @@ D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/canvas.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/Programs/ToolsPROF/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
 D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/bacteria.h
-D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/lifeform.h
-D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/lifeformcollection.h
 D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/simulation.cpp
 D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/nanorobot.h
+D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/lifeformcollection.h
+D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/lifeform.h
 D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/magicbacteria.h
 D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/photobacteria.h
-D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/virus.h
 D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/magicbacteria.cpp
+D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/lifeforms/virus.h
 D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/random.h
 D:/Education/BSUIR/Disciplines/OOP/LifeForm_Simulation/simplewindow.h
  mmc:Q_OBJECT
