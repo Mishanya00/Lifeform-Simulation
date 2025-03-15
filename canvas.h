@@ -15,11 +15,12 @@ public:
     explicit Canvas(QWidget *parent = nullptr);
     void IterateButtonPressed();
 
+    std::unique_ptr<Simulation> sims;
+
 protected:
     void paintEvent(QPaintEvent *event) override;
 
 private:
-    std::unique_ptr<Simulation> sims;
 
 signals:
 };

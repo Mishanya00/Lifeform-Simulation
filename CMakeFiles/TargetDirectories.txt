@@ -1,0 +1,9 @@
+C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation/CMakeFiles/LifeForm_Simulation.dir
+C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation/CMakeFiles/edit_cache.dir
+C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation/CMakeFiles/rebuild_cache.dir
+C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation/CMakeFiles/list_install_components.dir
+C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation/CMakeFiles/install.dir
+C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation/CMakeFiles/install/local.dir
+C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation/CMakeFiles/install/strip.dir
+C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation/CMakeFiles/LifeForm_Simulation_autogen_timestamp_deps.dir
+C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation/CMakeFiles/LifeForm_Simulation_autogen.dir

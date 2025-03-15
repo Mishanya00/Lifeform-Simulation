@@ -11,8 +11,8 @@ class SelectWindow : public QDialog
 {
     Q_OBJECT
 public:
-    explicit SelectWindow(QWidget *parent = nullptr, std::unique_ptr<Simulation> sim = nullptr);
-    void AddButtonPressed(std::unique_ptr<Simulation>& sim);
+    explicit SelectWindow(QWidget *parent = nullptr);
+    void AddButtonPressed();
     bool isNumber(const QString &text);
 
 private:
@@ -24,7 +24,7 @@ private:
     QComboBox * cbLifeSelect;
 
 signals:
-
+    void DataReceived(LifeformType type, QPointF coord, int size, int hp, int max_hp);
 };
 
 #endif // SELECTWINDOW_H

@@ -8,7 +8,7 @@
 #include <QRegularExpression>
 
 
-SelectWindow::SelectWindow(QWidget *parent, std::unique_ptr<Simulation> sim)
+SelectWindow::SelectWindow(QWidget *parent)
     : QDialog{parent}
 {
     this->setWindowTitle("Add new Lifeform");
@@ -91,19 +91,20 @@ SelectWindow::SelectWindow(QWidget *parent, std::unique_ptr<Simulation> sim)
     auto btnCreateLifeform = new QPushButton("Add", this);
     ltFourthLine->addWidget(btnCreateLifeform);
     ltFourthLine->setStretch(1, 2);
-    connect(btnCreateLifeform, &QPushButton::clicked, this, [this, &sim]() { SelectWindow::AddButtonPressed(sim); });
+    connect(btnCreateLifeform, &QPushButton::clicked, this, &SelectWindow::AddButtonPressed);
 
     ltFourthLine->addStretch(4);
 }
 
 bool SelectWindow::isNumber(const QString &text) {
-    QRegularExpression regExp("^-?\\d+$"); // Same regex as before
+    //QRegularExpression regExp("^-?\\d+$"); // Same regex as before
+    QRegularExpression regExp("^-?\\d+([\\.,]\\d+)?([eE][-+]?\\d+)?$");
     return regExp.match(text).hasMatch(); // Check if the input matches the regex
 }
 
-void SelectWindow::AddButtonPressed(std::unique_ptr<Simulation>& sim)
+void SelectWindow::AddButtonPressed()
 {
-    int x, y;
+    float x, y;
     int size;
     int hp, max_hp;
     bool isCorrect = true;
@@ -117,8 +118,8 @@ void SelectWindow::AddButtonPressed(std::unique_ptr<Simulation>& sim)
         QMessageBox::critical(this, "Error", "Coordinate parameters contain non-integers");
     }
     if (isNumber(leHP->text()) && isNumber(leMaxHP->text())) {
-        hp = leHP->text().toInt();
-        max_hp = leMaxHP->text().toInt();
+        hp = leHP->text().toFloat();
+        max_hp = leMaxHP->text().toFloat();
     }
     else {
         isCorrect = false;
@@ -153,9 +154,7 @@ void SelectWindow::AddButtonPressed(std::unique_ptr<Simulation>& sim)
         break;
     }
 
-    if (sim)
-    {
-        sim->AddNewAgent(to_create, QPoint(x, y), size, hp, max_hp);
-    }
+    emit DataReceived(to_create, QPointF(x,y), size, hp, max_hp);
+
     this->deleteLater();
 }

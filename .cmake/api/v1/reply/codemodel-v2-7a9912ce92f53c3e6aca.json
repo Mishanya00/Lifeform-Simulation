@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-9d84c6a4e749e80d45be.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LifeForm_Simulation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LifeForm_Simulation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LifeForm_Simulation-Debug-710832d89a71fb2fe085.json",
+					"name" : "LifeForm_Simulation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LifeForm_Simulation_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LifeForm_Simulation_autogen-Debug-bc34504e5d0140aab050.json",
+					"name" : "LifeForm_Simulation_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LifeForm_Simulation_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LifeForm_Simulation_autogen_timestamp_deps-Debug-1b2365d773d60b75ebb7.json",
+					"name" : "LifeForm_Simulation_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation",
+		"source" : "C:/Users/Mishanya00/Documents/GitHub/Lifeform-Simulation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

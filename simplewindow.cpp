@@ -7,11 +7,22 @@
 #include "random.h"
 #include "selectwindow.h"
 
+#include <iostream>
+
 void SimpleWindow::AddNewButtonPressed()
 {
     SelectWindow *secondWindow = new SelectWindow(this);
+    connect(secondWindow, &SelectWindow::DataReceived, this, &SimpleWindow::HandleReceivedData);
     secondWindow->setAttribute(Qt::WA_DeleteOnClose); // Automatically delete the window when closed
     secondWindow->show();
+}
+
+void SimpleWindow::HandleReceivedData(LifeformType type, QPointF coord, int size, int hp, int max_hp)
+{
+    std::cout << "Got data!\n";
+    std::cout << size << ' ' << hp << ' ' << max_hp << '\n';
+    cnvMain->sims->AddNewAgent(type, coord, size, hp, max_hp);
+    cnvMain->update();
 }
 
 SimpleWindow::SimpleWindow(QWidget *parent)
@@ -23,7 +34,7 @@ SimpleWindow::SimpleWindow(QWidget *parent)
 
     auto outer = new QHBoxLayout(this);
 
-    auto cnvMain = new Canvas(this);
+    cnvMain = new Canvas(this);
     outer->addWidget(cnvMain);
     outer->setStretch(0, 9);
 

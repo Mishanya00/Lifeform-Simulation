@@ -18,6 +18,10 @@ public:
     int maxHp();
     int hp();
 
+    void SetMaxHp(int max_hp);
+    void SetHP(int hp);
+    void SetSize(int size);
+
     virtual void Draw(QPainter & painter) = 0;
 
     // necessary method in future for every inheritant to implement
